@@ -1,0 +1,38 @@
+.p-skill {
+
+    &__left {
+        height: 50vh;
+        position: relative;
+
+        & > * {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            // opacity: 1;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &-heading {
+            font-size: rem(32);
+            font-weight: bold;
+            color: var(--color-text);
+        }
+    }
+    &__right {
+        padding-top: rem(64);
+        padding-bottom: rem(64);
+
+        &-box {
+            padding-bottom: rem(128);
+        }
+    }
+    &__text {
+        &-accent {
+            font-size: rem(24);
+            font-weight: bold;
+            padding-bottom: rem(88);
+            color: var(--color-text);
+        }
+    }
+}

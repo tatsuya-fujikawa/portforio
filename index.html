@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/microcms-js-sdk@latest/dist/umd/microcms-js-sdk.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/cms.js" defer></script>
+    <title>T'sウェブサイト｜ポートフォリオ</title>
+</head>
+<body class="l-body">
+    <!-- loading -->
+    <div id="p-loading" class="p-loading">
+        <div class="p-loading__loader"></div>
+    </div><!-- /p-loading -->
+    <!-- loading -->
+    <header class="p-header l-header">
+        <div class="l-container">
+            <div class="p-header__body">
+                <div class="p-header__logo">
+                    <img src="./assets/img/logo.svg" alt="" width="150px" height="40px">
+                    <h1 class="u-visually-hidden">藤川ポートフォリオサイト</h1>
+                </div><!-- /p-header__logo -->
+                <nav class="p-header__nav">
+                    <ul class="p-header__list">
+                        <li class="p-header__list-item"><a href="#about" lang="en">About</a></li>
+                        <li class="p-header__list-item"><a href="#work" lang="en">Work</a></li>
+                    </ul>
+                    <div class="p-header__button" role="button">
+                        <a href="./contact/" lang="en">Contact</a>
+                    </div><!-- /p-header__button -->
+                </nav><!-- /p-header__nav -->
+            </div><!-- /p-header__body -->
+        </div><!-- /l-container -->
+    </header><!-- /l-header -->
+    <div class="u-header__spacer"></div><!--header fixedを相殺するclass-->
+    <section class="l-mv p-mv">
+        <div class="l-container">
+            <div class="p-mv__mv">
+                <img src="./assets/img/mv.jpg" alt="" loading="eager" width="1200px" height="735px">
+                <div class="p-mv__wrap">
+                    <div class="p-mv__text">
+                        <div id="p-mv__lead" class="p-mv__lead">
+                            <p><span data-text="anim" lang="en">T's</span></p>
+                            <p class="u-uppercase"><span data-text="anim" lang="en">website</span></p>
+                            <h2 class="u-visually-hidden">マイポートフォリオサイト</h2>
+                        </div><!-- /p-mv__lead -->
+                    </div><!-- /p-mv__text -->
+                </div><!-- /p-mv__wrap -->
+            </div><!-- /p-mv__mv -->
+        </div><!-- /l-container -->
+    </section><!-- /l-mv -->
+    <section class="l-profile p-profile">
+        <div class="l-container">
+            <div class="l-spacer -notop">
+                <div class="c-flex c-flex__spacebetween">
+                    <div class="p-profile__img c-flex__item c-flex__item-half gs_reveal gs_reveal_fromLeft">
+                        <img src="./assets/img/face.jpg" alt="" loading="lazy">
+                    </div><!-- /p-profile__img -->
+                    <div class="p-profile__leadingSection c-flex__item c-flex__item-half  gs_reveal">
+                        <h2 class="p-profile__name" lang="en">Tatsuya Fujikawa</h2>
+                        <p class="c-sentence">こんにちは、藤川達也です。</p>
+                        <p class="c-sentence">Web制作会社に勤務しています。</p>
+                        <p class="c-sentence">京都市在住、生まれは京都の田舎です。<br>
+                        Web制作を通じて、誰かの役に立ちたいと思っています。<br>何か手伝えることがあれば、お気軽にご相談ください。</p>
+                        
+                    </div><!-- /c-grid__item -->
+                </div><!-- /c-grid -->
+            </div><!-- /l-spacer -->
+        </div><!-- /l-container -->
+    </section>
+    <section class="l-skill p-skill">
+        <div class="l-container l-container__narrow">
+            <div class="l-spacer">
+                <h2 class="c-heading u-uppercase" lang="en">
+                    skills
+                </h2><!-- /c-heading -->
+                <div class="l-skill__container">
+                    <div class="p-skill__left">
+                        <h3 class="textToShow u-uppercase p-skill__left-heading" id="text1" lang="en">html</h3>
+                        <h3 class="textToShow u-uppercase p-skill__left-heading" id="text2" lang="en">css</h3>
+                        <h3 class="textToShow p-skill__left-heading" id="text3" lang="en">Word Press</h3>
+                        <h3 class="textToShow p-skill__left-heading" id="text4" lang="en">Java Script</h3>
+                    </div><!-- /p-skill__left -->
+                    <div class="p-skill__right">
+                        <div class="p-skill__right-box">
+                            <p class="js-contentMarker p-skill__text-accent" data-marker-content="text1">
+                                HTMLコーディングについて
+                            </p>
+                            <p class="c-sentence"> 適切な見出しタグを使用し、HTMLOutLinerで「Untitled Section」を出さないように、また適切な文書構造を崩さないよう、コーディングをいたします。</p>
+                            <p class="c-sentence">ユーザビリティ・アクセシビリティに考慮したコーディングをいたします。<br>文書の意味にあったタグを使用し、WAI-ARIA属性も必要な箇所に付けるようにコーディングいたします。</p>
+                            <p class="c-sentence">SEOを意識したコーディングをいたします。レイアウトシフトのズレを起こさないように、&lt;img&gt;タグにはwidth・heightを定義し、適切な属性を定義いたします。</p>
+                            <p class="c-sentence">作って終わりにはせず、今後も運用・更新がしやすいような
+                                保守性の高いコーディングを目指します。再利用できるコードや汎用性の高いコードを書くように心がけています。
+                            </p>
+                        </div><!-- /p-skill__right-box -->
+
+                        <div class="p-skill__right-box">
+                            <p class="js-contentMarker p-skill__text-accent" data-marker-content="text2">CSSについて</p>
+                            <p class="c-sentence">SASSを用いてコーディングをいたします。コンパイルはgulp.jsを主に使用いたしますが、昨今の業界での使用状況を鑑みて、webpackを使用してバンドルが出来るように移行中です。</p>
+                            <p class="c-sentence">CSS設計はFLOCSSを使用しています。<br>PRECSSも使用することが出来ます。ルールに則ったコーディングが可能です。チームでの開発経験は乏しいですが、コーディングルールは守ります。</p>
+                            <p class="c-sentence">汎用性が高いものをコンポーネント化し、出来るだけ少ないコードで表現が出来るようにコーディングをします。</p>
+                            <p class="c-sentence">再利用しやすい・崩れにくいコーディングをいたします。</p>
+                            <p class="c-sentence">最近のJamstack構成のページとも相性がいいTailwind.cssもこれから使用していきたいと考えています。</p>
+                        </div><!-- /p-skill__right-box -->
+                        
+                        <div class="p-skill__right-box">
+                            <p class="js-contentMarker p-skill__text-accent" data-marker-content="text3">Word Pressについて</p>
+                            <p class="c-sentence">静的サイトからWordPress化いたします。</p>
+                            <p class="c-sentence">ループ処理やプラグインを使用してのフォームの実装、カスタム投稿タイプの作成など柔軟に対応が可能です。<br>また、SEO面のチューニングが必要な時は、適宜プラグインを使用して適切なディスクリプション・OGP画像の設定・目次など設定いたします。</p>
+                            <p class="c-sentence">WordPressのデメリットとして、ページスピードが遅くなりがちですが、WebPを利用したりCSS/JSを圧縮するなどをしてページスピードも意識した作成をさせていただきます。</p>
+                        </div>
+                        
+                        <div class="p-skill__right-box">
+                            <p class="js-contentMarker p-skill__text-accent" data-marker-content="text4">Java Scriptについて</p>
+                            <p class="c-sentence">JavaScriptを使用して、アニメーションの作成を行います。</p>
+                            <p class="c-sentence">フォームのバリデーションも実装が可能です。</p>
+                            <p class="c-sentence">Webサイトに実装される基本的な構成のもの<br>
+                            (アコーディオンメニューやタブメニュー、モーダルやスライダーなど)実装いたします。</p>
+                            <p class="c-sentence">基本的なDOM操作も可能です。</p>
+                        </div><!-- /p-skill__right-box -->
+                    </div>
+                    </div><!-- /p-skill__right -->
+            </div><!-- /l-spacer -->
+        </div><!-- /l-container -->
+    </section><!-- /l-skill -->
+    <section class="p-form l-form">
+        <div class="l-container l-container__narrow">
+            <div class="l-spacer">
+                <h2 class="c-heading c-heading__center u-uppercase">contact</h2>
+                <div class="l-spacer"></div><!-- /l-spacer -->
+                <div class="l-spacer"></div><!-- /l-spacer -->
+                <div class="l-spacer"></div><!-- /l-spacer -->
+                <div class="l-spacer"></div><!-- /l-spacer -->
+                <div class="l-spacer"></div><!-- /l-spacer -->
+            </div><!-- /l-spacer -->
+        </div><!-- /l-container -->
+    </section>
+
+
+</body>
+</html>

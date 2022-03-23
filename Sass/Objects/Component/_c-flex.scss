@@ -1,0 +1,16 @@
+.c-flex {
+    display: flex;
+
+    &__spacebetween {
+        justify-content: space-between;
+    }
+    &__aligncenter {
+        align-items: center;
+    }
+
+    &__item {
+        &-half {
+            flex-basis: 50%;
+        }
+    }
+}

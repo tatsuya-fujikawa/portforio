@@ -1,0 +1,9 @@
+.c-sentence {
+    font-size: rem(16);
+    color: var(--color-text);
+    letter-spacing: 0.1em;
+    line-height: rem(32);
+}
+.c-sentence + .c-sentence {
+    padding-top: rem(8);
+}

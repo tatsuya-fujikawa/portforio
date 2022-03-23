@@ -1,0 +1,51 @@
+.p-header {
+    background-color: var(--color-main);
+
+    &__body {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        margin-left: rem(24);
+
+        a {
+            display: block;
+            height: 80px;
+            line-height: 80px;
+            padding: 0 rem(16);
+            color: var(--color-white);
+            background-color: var(--color-accent);
+            transition: 0.4s ease;
+
+            &.-scrolled {
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    &__logo {
+        padding-left: rem(8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.p-header__list-item {
+    color: var(--color-white);
+    padding-left: rem(24);
+}

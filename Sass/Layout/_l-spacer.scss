@@ -1,0 +1,12 @@
+.l-spacer {
+  padding: rem(80) 0;
+
+  &.-notop {
+    padding-top: 0;
+  }
+
+  @include mq('sp') {
+    padding: rem(40) 0;
+  }
+  
+}

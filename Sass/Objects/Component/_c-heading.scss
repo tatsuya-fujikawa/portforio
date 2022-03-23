@@ -1,0 +1,14 @@
+.c-heading {
+    font-size: rem(36);
+    letter-spacing: .2rem;
+    padding-bottom: rem(32);
+    color: var(--color-text);
+
+    &__center {
+        text-align: center;
+    }
+
+    &::first-letter {
+        color: var(--color-accent);
+    }
+}

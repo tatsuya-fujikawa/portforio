@@ -1,0 +1,9 @@
+.l-skill {
+    &__container {
+        display: flex;
+
+        & > * {
+            width: 50%;
+        }
+    }
+}

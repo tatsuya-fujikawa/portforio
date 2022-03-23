@@ -1,0 +1,33 @@
+.p-profile {
+    &__img {
+        text-align: center;
+        overflow: hidden;
+        
+        img {
+            border-radius: 50%;
+            max-width: 400px;
+            box-shadow: 1px 1px 5px 1px var(--color-shadow);
+            display: block;
+            padding: 10px;
+            margin: 0 auto;
+        }
+    }
+
+    &__leadingSection {
+        padding: 0 rem(60) 0 0;
+    }
+
+    &__name {
+        padding-top: rem(24);
+        padding-bottom: rem(8);
+        color: var(--color-text);
+        margin-bottom: rem(32);
+        position: relative;
+        font-size: rem(32);
+        letter-spacing: .1em;
+        background-image: repeating-linear-gradient(-45deg, var(--color-accent) 0, var(--color-accent) 4px, transparent 4px, transparent 8px);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 64% 15%;
+    }
+}

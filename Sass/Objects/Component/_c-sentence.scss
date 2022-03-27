@@ -3,6 +3,10 @@
     color: var(--color-text);
     letter-spacing: 0.1em;
     line-height: rem(32);
+
+    @include mq('sp') {
+        font-size: rem(14);
+    }
 }
 .c-sentence + .c-sentence {
     padding-top: rem(8);

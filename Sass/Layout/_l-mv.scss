@@ -1,3 +1,7 @@
 .l-mv {
     height: 95vh;
+
+    @include mq('sp') {
+        height: 70vh;
+    }
 }

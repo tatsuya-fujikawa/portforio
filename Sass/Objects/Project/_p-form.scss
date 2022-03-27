@@ -1,0 +1,14 @@
+.p-form {
+    &__iframe {
+        margin: rem(32) auto 0;
+        text-align: center;
+
+        & iframe {
+            @include mq('sp') {
+                width: 100%;
+                height: 950px;
+            }
+        }
+
+    }
+}

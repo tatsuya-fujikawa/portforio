@@ -3,10 +3,18 @@
         padding: rem(40);
         position: relative;
 
+        @include mq('sp') {
+            padding: rem(40) rem(16);
+        }
+
         img {
             width: 100%;
             height: 75vh;
             object-fit: cover;
+
+            @include mq('sp') {
+                height: 50vh;
+            }
         }
     }
 
@@ -25,6 +33,10 @@
             font-size: rem(40);
             font-weight: bold;
             letter-spacing: 0.2em;
+
+            @include mq('sp') {
+                font-size: rem(28);
+            }
         }
 
         span {

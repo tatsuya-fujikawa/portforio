@@ -30,11 +30,11 @@
                 </div><!-- /p-header__logo -->
                 <nav class="p-header__nav">
                     <ul class="p-header__list">
-                        <li class="p-header__list-item"><a href="#about" lang="en">About</a></li>
-                        <li class="p-header__list-item"><a href="#work" lang="en">Work</a></li>
+                        <li class="p-header__list-item"><a href="#profile" lang="en">Profile</a></li>
+                        <li class="p-header__list-item"><a href="#skill" lang="en">Skill</a></li>
                     </ul>
                     <div class="p-header__button" role="button">
-                        <a href="./contact/" lang="en">Contact</a>
+                        <a href="#contact" lang="en">Contact</a>
                     </div><!-- /p-header__button -->
                 </nav><!-- /p-header__nav -->
             </div><!-- /p-header__body -->
@@ -57,10 +57,10 @@
             </div><!-- /p-mv__mv -->
         </div><!-- /l-container -->
     </section><!-- /l-mv -->
-    <section class="l-profile p-profile">
-        <div class="l-container">
+    <section id="profile" class="l-profile p-profile">
+        <div class="l-container u-sppadding">
             <div class="l-spacer -notop">
-                <div class="c-flex c-flex__spacebetween">
+                <div class="c-flex c-flex__spacebetween c-flex__spBlock">
                     <div class="p-profile__img c-flex__item c-flex__item-half gs_reveal gs_reveal_fromLeft">
                         <img src="./assets/img/face.jpg" alt="" loading="lazy">
                     </div><!-- /p-profile__img -->
@@ -70,14 +70,14 @@
                         <p class="c-sentence">Web制作会社に勤務しています。</p>
                         <p class="c-sentence">京都市在住、生まれは京都の田舎です。<br>
                         Web制作を通じて、誰かの役に立ちたいと思っています。<br>何か手伝えることがあれば、お気軽にご相談ください。</p>
-                        
+                        <p class="c-sentence">仕事で作成したサイトは多数ございますが、<br>こちらに載せることは出来ないので、<br>ここに載せられるような実績を作ることが当面の目標です！</p>
                     </div><!-- /c-grid__item -->
                 </div><!-- /c-grid -->
             </div><!-- /l-spacer -->
         </div><!-- /l-container -->
     </section>
-    <section class="l-skill p-skill">
-        <div class="l-container l-container__narrow">
+    <section id="skill" class="l-skill p-skill">
+        <div class="l-container l-container__narrow u-sppadding">
             <div class="l-spacer">
                 <h2 class="c-heading u-uppercase" lang="en">
                     skills
@@ -116,6 +116,7 @@
                             <p class="c-sentence">静的サイトからWordPress化いたします。</p>
                             <p class="c-sentence">ループ処理やプラグインを使用してのフォームの実装、カスタム投稿タイプの作成など柔軟に対応が可能です。<br>また、SEO面のチューニングが必要な時は、適宜プラグインを使用して適切なディスクリプション・OGP画像の設定・目次など設定いたします。</p>
                             <p class="c-sentence">WordPressのデメリットとして、ページスピードが遅くなりがちですが、WebPを利用したりCSS/JSを圧縮するなどをしてページスピードも意識した作成をさせていただきます。</p>
+                            <p class="c-sentence">その他、サーバーの移管やドメインの切り替えなども柔軟に対応させていただきます。お気軽にご相談ください。</p>
                         </div>
                         
                         <div class="p-skill__right-box">
@@ -125,24 +126,29 @@
                             <p class="c-sentence">Webサイトに実装される基本的な構成のもの<br>
                             (アコーディオンメニューやタブメニュー、モーダルやスライダーなど)実装いたします。</p>
                             <p class="c-sentence">基本的なDOM操作も可能です。</p>
+                            <p class="c-sentence">今はもう一歩進んだWEB制作を目指しており、JamstackベースでWebサイトを構築できるように勉強中です。</p>
                         </div><!-- /p-skill__right-box -->
                     </div>
                     </div><!-- /p-skill__right -->
             </div><!-- /l-spacer -->
         </div><!-- /l-container -->
     </section><!-- /l-skill -->
-    <section class="p-form l-form">
+    <section id="contact" class="p-form l-form">
         <div class="l-container l-container__narrow">
             <div class="l-spacer">
                 <h2 class="c-heading c-heading__center u-uppercase">contact</h2>
-                <div class="l-spacer"></div><!-- /l-spacer -->
-                <div class="l-spacer"></div><!-- /l-spacer -->
-                <div class="l-spacer"></div><!-- /l-spacer -->
-                <div class="l-spacer"></div><!-- /l-spacer -->
-                <div class="l-spacer"></div><!-- /l-spacer -->
+                <p class="c-sentence u-centerposition">どんなことでもお気軽にご相談ください。</p>
+                <div class="p-form__iframe">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScYJW48-9viLEDTh9mSm13KHrLDqeJXW7dL-GwXmu_m7-3lrw/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                </div><!-- /p-form__iframe -->
             </div><!-- /l-spacer -->
         </div><!-- /l-container -->
     </section>
+    <footer>
+        <div class="p-footer l-footer">
+            <p class="p-footer__copyright u-centerposition">&copy; Fujikawa Tatsuya all right reserved.</p>
+        </div><!-- /p-footer -->
+    </footer>
 
 
 </body>

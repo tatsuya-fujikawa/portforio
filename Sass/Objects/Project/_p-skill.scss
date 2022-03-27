@@ -4,6 +4,10 @@
         height: 50vh;
         position: relative;
 
+        @include mq('sp') {
+            display: none;
+        }
+
         & > * {
             position: absolute;
             left: 50%;
@@ -23,8 +27,21 @@
         padding-top: rem(64);
         padding-bottom: rem(64);
 
+        @include mq('sp') {
+            padding-top: rem(16);
+            padding-bottom: rem(16);
+        }
+
         &-box {
             padding-bottom: rem(128);
+
+            @include mq('sp') {
+                padding-bottom: rem(64);
+
+                &:last-of-type {
+                    padding-bottom: 0;
+                }
+            }
         }
     }
     &__text {
@@ -33,6 +50,11 @@
             font-weight: bold;
             padding-bottom: rem(88);
             color: var(--color-text);
+
+            @include mq('sp') {
+                padding-bottom: rem(24);
+                font-size: rem(20);
+            }
         }
     }
 }

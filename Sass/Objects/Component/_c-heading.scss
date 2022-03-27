@@ -4,6 +4,10 @@
     padding-bottom: rem(32);
     color: var(--color-text);
 
+    @include mq('sp') {
+        font-size: rem(24);
+    }
+
     &__center {
         text-align: center;
     }

@@ -13,4 +13,10 @@
             flex-basis: 50%;
         }
     }
+
+    &__spBlock {
+        @include mq('sp') {
+            display: block;
+        }
+    }
 }

@@ -24,9 +24,6 @@
         outline-offset: -1px;
         transition: .3s ease;
 
-        @include mq('sp') {
-            margin-right: 1px;
-        }
         a {
             display: block;
             height: 80px;
@@ -56,9 +53,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-shadow: 2px 2px 0 #fff;
+
+    }
+    &__text {
+        font-weight: bold;
+        font-size: rem(24);
+        color: var(--color-accent);
 
         @include mq('sp') {
-            padding-top: rem(8);
+            font-size: rem(20);
+        }
+
+        & strong {
+            font-size: 1.25em;
         }
     }
 }

@@ -653,11 +653,6 @@ img {
   outline-offset: -1px;
   transition: 0.3s ease;
 }
-@media screen and (max-width: 767px) {
-  .p-header__button {
-    margin-right: 1px;
-  }
-}
 .p-header__button a {
   display: block;
   height: 80px;
@@ -680,11 +675,20 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 2px 2px 0 #fff;
+}
+.p-header__text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--color-accent);
 }
 @media screen and (max-width: 767px) {
-  .p-header__logo {
-    padding-top: 0.5rem;
+  .p-header__text {
+    font-size: 1.25rem;
   }
+}
+.p-header__text strong {
+  font-size: 1.25em;
 }
 
 .p-header__list-item {

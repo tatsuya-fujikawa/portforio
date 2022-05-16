@@ -1,0 +1,24 @@
+.c-button {
+    button {
+        margin: 0 auto;
+        padding: rem(12) rem(24);
+        min-width: 240px;
+        color: var(--color-text);
+        font-size: rem(16);
+        font-weight: 700;
+        // background-color: #cccccc;
+        border-image-source: repeating-linear-gradient(-45deg, var(--color-accent) 0, var(--color-accent) 8px, rgba(0, 0, 0, 0) 8px, rgba(0, 0, 0, 0) 11px);
+        border-image-slice: 3;
+        border-width: 3px;
+        border-image-repeat: round;
+        border-style: solid;
+        transition: 0.2s ease;
+
+        &:hover {
+            transition: 0.2s ease;
+            border-image-source: repeating-linear-gradient(45deg, var(--color-accent) 0, var(--color-accent) 8px, rgba(0, 0, 0, 0) 8px, rgba(0, 0, 0, 0) 11px);
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+    }
+}

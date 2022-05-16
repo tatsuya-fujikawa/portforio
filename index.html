@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
     <script src="https://unpkg.com/microcms-js-sdk@latest/dist/umd/microcms-js-sdk.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.min.css">
     <script src="./assets/js/main.js" defer></script>
     <script src="./assets/js/cms.js" defer></script>
     <title>T'sウェブサイト ｜ ポートフォリオ</title>
@@ -75,11 +76,66 @@
                         Web制作を通じて、誰かの役に立ちたいと思っています。<br>何か手伝えることがあれば、お気軽にご相談ください。</p>
                         <p class="c-sentence">仕事で作成したサイトは多数ございますが、<br>こちらに載せることは出来ないので、<br>ここに載せられるような実績を作ることが当面の目標です！</p>
                         <p class="c-sentence">アップデートしていきますので、たまに覗いてくださいませ。</p>
+                        <div class="l-button c-button">
+                            <button type="button" data-micromodal-trigger="p-modal-1">経歴を詳しく見る</button>
+                        </div>
                     </div><!-- /c-grid__item -->
                 </div><!-- /c-grid -->
             </div><!-- /l-spacer -->
         </div><!-- /l-container -->
     </section>
+
+            <!-- modal01 -->
+            <div id="p-modal-1" class="p-modal__wrap" aria-hidden="true">
+                <div class="p-modal__overlay" tabindex="-1" data-micromodal-close>
+    
+                </div>
+                <div class="p-modal__container" role="dialog" aria-modal="true">
+                    <div class="p-modal__close">
+                        <button class="p-modal__closeButton" type="button" aria-label="Close modal" data-micromodal-close>✕</button>
+                    </div><!-- /.p-modal__close -->
+                    <div id="p-modal-1-content">
+                        <div class="p-modal__flex">
+                            <div class="p-modal__block">
+                                <p class="p-modal__lead">二重整形</p>
+                                <ul class="p-modal__category">
+                                    <li class="p-modal__category-item"><a href="/diagnosis/eye/maibotsu/">二重埋没法</a></li>
+                                    <li class="p-modal__category-item"><a href="/diagnosis/eye/sekkai/">二重切開法</a></li>
+                                </ul><!-- /.p-modal__category -->
+                            </div><!-- /.p-modal__block -->
+                            <div class="p-modal__block">
+                                <p class="p-modal__lead">目力をアップ</p>
+                                <ul class="p-modal__category">
+                                    <li class="p-modal__category-item"><a href="/diagnosis/diagnosis/eye/gankenkasui/">眼瞼下垂</a></li>
+                                    <li class="p-modal__category-item"><a href="/diagnosis/diagnosis/eye/tarumi_mayushita/">眉下切開</a></li>
+                                </ul><!-- /.p-modal__category -->
+                            </div><!-- /.p-modal__block -->
+                            <div class="p-modal__block">
+                                <p class="p-modal__lead">目を横に大きく</p>
+                                <ul class="p-modal__category">
+                                    <li class="p-modal__category-item"><a href="/diagnosis/eye/megashira/">目頭切開</a></li>
+                                    <li class="p-modal__category-item"><a href="/diagnosis/eye/mejiri-sekkai/">目尻切開</a></li>
+                                </ul><!-- /.p-modal__category -->
+                            </div><!-- /.p-modal__block -->
+                            <div class="p-modal__block">
+                                <p class="p-modal__lead">クマ改善</p>
+                                <ul class="p-modal__category">
+                                    <li class="p-modal__category-item"><a href="/diagnosis/eye/ageng-eye/">目の下のたるみ取り</a></li>
+                                    <li class="p-modal__category-item"><a href="https://www.mizunomori.com/diagnosis/eye/darkcircles/">目の下のヒアルロン酸</a></li>
+                                </ul><!-- /.p-modal__category -->
+                            </div><!-- /.p-modal__block -->
+                            <div class="p-modal__block">
+                                <p class="p-modal__lead">よりかわいらしく</p>
+                                <ul class="p-modal__category">
+                                    <li class="p-modal__category-item"><a href="/diagnosis/eye/hyaluronan/">涙袋のヒアルロン酸</a></li>
+                                    <li class="p-modal__category-item"><a href="https://www.mizunomori.com/diagnosis/eye/botox/">たれ目のボトックス</a></li>
+                                </ul><!-- /.p-modal__category -->
+                            </div><!-- /.p-modal__block -->
+                        </div><!-- /.p-modal__flex -->
+                    </div>
+                </div>
+            </div>
+            <!-- modal01 -->
     <section id="skill" class="l-skill p-skill">
         <div class="l-container l-container__narrow u-sppadding">
             <div class="l-spacer">

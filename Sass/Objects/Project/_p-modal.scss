@@ -1,0 +1,93 @@
+#p-modal-1 {
+    display: none;
+
+    animation: fadeIn .5s ease;
+    &.is-open {
+        display: block;
+        
+    }
+}
+.p-modal__wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.p-modal {
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.7);
+        will-change: transform;
+    }
+
+    &__container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        max-width: 960px;
+        width: 95%;
+        height: 70vh;
+        z-index: 10;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: rem(0) rem(16);
+        background: var(--color-white);
+        border: 2px solid var(--color-accent);
+        transition: 0.5s ease;
+
+        @include mq('pc') {
+            padding: rem(32);
+        }
+    }
+    &__close {
+        text-align: right;
+        position: relative;
+    }
+    &__closeButton {
+        background-color: #808080;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        margin-right: -16px;
+        z-index: 15;
+        color: var(--color-white);
+        position: relative;
+
+        &:hover {
+            background-color: #a1a1a1;
+        }
+    }
+
+    &__inner {
+        padding: rem(32) rem(64);
+    }
+
+}
+
+.p-modal__wrap[aria-hidden="false"] .p-modal__overlay {
+    animation: fadeIn .3s cubic-bezier(0, 0, .2, 1);
+}
+.p-modal__wrap[aria-hidden="false"] .p-modal__container {
+    animation: fadeIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.p-modal__wrap[aria-hidden="true"] .p-modal__overlay {
+    animation: fadeOut .3s cubic-bezier(0, 0, .2, 1);
+}
+.p-modal__wrap[aria-hidden="true"] .p-modal__container {
+    animation: fadeOut .3s cubic-bezier(0, 0, .2, 1);
+}

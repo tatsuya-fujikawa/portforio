@@ -1,11 +1,9 @@
 'use strict'
 
-
+//スムーススクロール
 {
   // aタグ要素の参照を取得
 const scrollBtn = document.querySelectorAll('a[href^="#"]');
-
-
 // 各aタグにクリックイベントを設定
 for ( let i = 0; i < scrollBtn.length; i++ ) {
 scrollBtn[i].addEventListener('click', (e) => {
@@ -25,7 +23,6 @@ scrollBtn[i].addEventListener('click', (e) => {
   // 対象までのスクロール量を算出
   const top = elemY + scrollY - buffer;
 
-
   window.scroll({
     top: top, // スクロール量の設定
     behavior: 'smooth' // スクロール動作の設定
@@ -33,7 +30,6 @@ scrollBtn[i].addEventListener('click', (e) => {
 });
 }
 }
-
 
 //loading animを初回読み込み時だけ実行するためのcookie判定
 function setCookie(key,value) {
@@ -122,9 +118,6 @@ window.addEventListener('load', function() {
   },300);
 });
 
-
-// console.clear();
-
 gsap.defaults({overwrite: 'auto'});
 
 gsap.set(".p-skill__left > *", {xPercent: -50, yPercent: -50});
@@ -200,3 +193,12 @@ function checkSTState() {
     ST.enable();
   }
 }
+
+
+//マイクロモーダル
+MicroModal.init({
+  openClass: 'is-open',
+  disableScroll: true,
+  awaitOpenAnimation: true,
+  awaitCloseAnimation: true,
+});

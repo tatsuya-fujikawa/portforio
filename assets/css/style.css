@@ -770,7 +770,33 @@ img {
   background-color: #a1a1a1;
 }
 .p-modal__inner {
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
+}
+.p-modal__list {
+  display: flex;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+.p-modal__list dt {
+  min-width: 90px;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+.p-modal__list dd {
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+.p-modal__box {
+  padding-top: 0.5rem;
+}
+.p-modal__title {
+  color: var(--color-accent);
+  padding-top: 0.5rem;
+}
+.p-modal__sentence {
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text);
 }
 
 .p-modal__wrap[aria-hidden=false] .p-modal__overlay {

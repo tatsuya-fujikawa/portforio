@@ -73,7 +73,39 @@
     }
 
     &__inner {
-        padding: rem(32) rem(64);
+        padding: rem(32) rem(32);
+    }
+
+    &__list {
+        display: flex;
+        padding-bottom: rem(8);
+        padding-left: rem(8);
+
+        dt {
+            min-width: 90px;
+            font-size: rem(14);
+            color: var(--color-text);
+        }
+
+        dd {
+            font-size: rem(14);
+            color: var(--color-text);
+        }
+    }
+
+    &__box {
+        padding-top: rem(8);
+    }
+
+    &__title {
+        color: var(--color-accent);
+        padding-top: rem(8);
+    }
+
+    &__sentence {
+        padding-top: rem(8);
+        font-size: rem(14);
+        color: var(--color-text);
     }
 
 }
